@@ -1,0 +1,39 @@
+ [
+    {
+        "id":1,
+        "image":"butter",
+        "title":"All-Butter Croissant",
+        "price": 8
+    },
+    {
+        "id":2,
+        "image":"almond",
+        "title":"Almond Croissant",
+        "price": 6
+    },
+    {
+        "id":3,
+        "image":"raspberry",
+        "title":"Raspberry Danish",
+        "price": 9
+    },
+    {
+        "id":4,
+        "image":"pain",
+        "title":"Pain Aux Raisins",
+        "price": 7
+    },
+    {
+        "id":5,
+        "image":"apricot",
+        "title":"Apricot Danish",
+        "price": 12
+    },
+    {
+        "id":6,
+        "image":"painau",
+        "title":"Pain Au Chocolat",
+        "price": 10
+    }
+]
+

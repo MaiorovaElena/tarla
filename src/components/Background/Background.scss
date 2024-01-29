@@ -1,0 +1,16 @@
+@import "../../style/template";
+@import "../../style/vars";
+
+.background {
+  &__photo-img {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  &__information {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../style/template";
+@import "../../style/vars";
+
+.background__info {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 420px;
+  border: 1px solid black;
+  padding: 1%;
+  border-radius: 20px;
+
+  .background__info-img {
+    width: 100%;
+  }
+
+  .background__info-title {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    @extend %font-title;
+
+    @media #{$tablet} {
+        font-size: 20px;
+    }
+    @media #{$mobile} {
+        font-size: 17px;
+    }
+  }
+
+  .background__info-text {
+    text-align: center;
+    @extend %font-text;
+
+    @media #{$tablet}{
+        font-size: 17px;
+    }
+    @media #{$mobile} {
+        font-size: 13px;
+    }
+  }
+
+
+}

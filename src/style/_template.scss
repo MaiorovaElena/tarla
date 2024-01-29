@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$mobile: "screen and (max-width: 599px)";
+$tablet: "screen and (min-width: 600px) and (max-width: 1023px)";
+$desktop: "screen and (min-width: 1024px)";
+
+$background-color:#f5ede7;
+
+%container{
+    max-width: 1024px;
+    width: 100%;
+}
+
+%font-title{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+%font-text{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}

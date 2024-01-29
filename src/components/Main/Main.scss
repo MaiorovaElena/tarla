@@ -1,0 +1,12 @@
+@import '../../style/template';
+@import "../../style/vars";
+
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+
+    .container {
+        @extend %container;
+    }
+}

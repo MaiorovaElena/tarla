@@ -1,0 +1,17 @@
+@import '../../style/template';
+@import "../../style/vars";
+
+.sheet__quantity{
+    margin: 2% 0 2% 2%;
+
+    .sheet__quantity-num{
+        margin: 0 1% 0 1%;
+    }
+
+    .sheet__quantity-btn{
+        padding: 2px 2px;
+        border: none;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}

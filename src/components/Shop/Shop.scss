@@ -1,0 +1,27 @@
+@import "../../style/template";
+@import "../../style/vars";
+
+.shop {
+  margin-top: 10%;
+
+
+  &__title {
+    text-align: center;
+    padding: 5% 0 5% 0;
+    font-size: 29px;
+    @extend %font-title;
+
+    @media #{$tablet}{
+      font-size: 27px;
+    }
+    @media #{$mobile} {
+      font-size: 23px;
+    }
+  }
+
+  &__sheet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

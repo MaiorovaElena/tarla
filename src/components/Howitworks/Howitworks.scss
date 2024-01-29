@@ -1,0 +1,29 @@
+@import '../../style/template';
+@import "../../style/vars";
+
+.howitworks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+    padding-bottom: 5%;
+
+    &__title{
+        padding: 3% 0 3% 0;
+        font-size: 29px;
+        @extend %font-title;
+
+        @media #{$tablet}{
+            font-size: 27px;
+        }
+        @media #{$mobile} {
+            font-size: 23px;
+        }
+    }
+
+
+    &__lists{
+        display: flex;
+        // align-items: center;
+    }
+}
