@@ -3,6 +3,7 @@
 
 .shop {
   margin-top: 10%;
+  
 
 
   &__title {
@@ -20,8 +21,22 @@
   }
 
   &__sheet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    margin-bottom: 3%;
+
+    @media #{$tablet}{
+      grid-template-columns: 1fr 1fr;
+      margin-left: 10%;
+    }
+    @media #{$mobile} {
+      grid-template-columns: 1fr 1fr;
+      margin-left: 10%;
+    }
+    
   }
 }

@@ -4,11 +4,12 @@
 .sheet{
     display: flex;
     flex-direction: column;
-    width: 30%;
     margin-bottom: 4%;
+
 
     &__img{
         border-radius: 30px;
+        width: 85%;
     }
 
     &__title{
@@ -31,9 +32,10 @@
 
     &__btn{
         cursor: pointer;
-        text-align: centr;
+        text-align: center;
         width: 40%;
         padding: 2% 4%;
+        margin: 9px 0 9px 0;
         border-radius: 20px;
         border: 1px solid rgb(72, 72, 240);
 
@@ -43,5 +45,10 @@
         @media #{$mobile} {
             font-size: 10px;
         }
+    }
+
+    &__btn:active{
+        border: 3px solid blueviolet;
+        margin: 5px 0px 5px 0px;
     }
 }

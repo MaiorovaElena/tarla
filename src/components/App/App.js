@@ -3,12 +3,13 @@ import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
 import "./App.scss";
 // import "../Header/Header.scss";
-import logo from "../../assets/icon/tarla.svg";
-import cart from "../../assets/icon/cart.svg";
+
 import { useRef, useState } from "react";
 import Modal from "../Modal/Modal";
 import { useSelector } from "react-redux";
 import { getTotalPrice } from "../../redux/cartSlice";
+
+import Header from "../Header/Header";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -29,34 +30,7 @@ function App() {
 
   return (
     <>
-      <header className="header">
-        <div className="header__container container">
-          <div className="header__menu">
-            <div className="header__logo">
-              <img src={logo} alt="logo" className="header__logo-img" />
-            </div>
-            <div className="header__category">
-              <nav className="header__category-nav">
-                <li className="header__category-li" onClick={exeScroll}>
-                  Shop
-                </li>
-                <li className="header__category-li" onClick={scrollToBlock}>
-                  Contact
-                </li>
-              </nav>
-            </div>
-          </div>
-          <div className="header__cart">
-            <img
-              className="header__cart-img"
-              src={cart}
-              alt="logo cart"
-              onClick={() => setOpen(true)}
-            />
-            <p className="header__cart-text">Total: £ {totalPrice}</p>
-          </div>
-        </div>
-      </header>
+      <Header totalPrice={totalPrice} exeScroll={exeScroll} scrollToBlock={scrollToBlock} setOpen={setOpen}/>
       <Modal isOpen={open} onClose={() => setOpen(false)} />
       <Main
         forwardedRef={myRef}

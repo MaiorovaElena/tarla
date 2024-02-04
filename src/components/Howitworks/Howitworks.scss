@@ -23,7 +23,16 @@
 
 
     &__lists{
-        display: flex;
-        // align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2%;
+
+        @media #{$tablet}{
+            grid-template-columns: 1fr 1fr;
+        }
+        @media #{$mobile} {
+            grid-template-columns: 1fr;
+            margin-bottom: 4%;
+        }
     }
 }

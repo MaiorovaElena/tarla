@@ -2,6 +2,15 @@
 @import "../../style/vars";
 
 .background {
+  margin-top: 4%;
+
+  @media #{$tablet}{
+    margin-top: 10%;
+  }
+  @media #{$mobile} {
+    margin-top: 10%;
+  }
+  
   &__photo-img {
     max-width: 1024px;
     width: 100%;
@@ -10,7 +19,19 @@
   &__information {
     margin-top: 5%;
     margin-bottom: 5%;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+
+    @media #{$tablet}{
+      grid-template-columns: 1fr 1fr;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    @media #{$mobile} {
+      grid-template-columns: 1fr;
+    }
   }
 }

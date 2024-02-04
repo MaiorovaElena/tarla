@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-around;
 
+    @media #{$mobile} {
+        margin-top: 10%;
+    }
+
     &__photo{
         width: 50%;
     }

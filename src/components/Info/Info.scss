@@ -2,7 +2,7 @@
 @import "../../style/vars";
 
 .background__info {
-  width: 30%;
+  // width: 30%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -11,6 +11,17 @@
   border: 1px solid black;
   padding: 1%;
   border-radius: 20px;
+
+  @media #{$tablet}{
+    width: 80%;
+    margin: auto;
+    height: 390px;
+  }
+  @media #{$mobile} {
+    width: 60%;
+    margin: auto;
+    height: 344px;
+  }
 
   .background__info-img {
     width: 100%;
