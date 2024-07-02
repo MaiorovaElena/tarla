@@ -1,8 +1,6 @@
 import Footer from "../Footer/Footer";
-// import Header from "../Header/Header";
 import Main from "../Main/Main";
 import "./App.scss";
-// import "../Header/Header.scss";
 
 import { useRef, useState } from "react";
 import Modal from "../Modal/Modal";
